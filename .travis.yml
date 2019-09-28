@@ -1,3 +1,18 @@
 language: ruby
 rvm:
  - 2.3.3
+env:
+  global:
+    - CC_TEST_REPORTER_ID=e8697de5eb8dd585706f138168c35fb97e8e07247a2f965f2579f244161a43c2
+language: ruby
+rvm:
+  - 2.3.3
+before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+script:
+  - bundle exec rails db:migrate RAILS_ENV=test
+  - bundle exec rake
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
