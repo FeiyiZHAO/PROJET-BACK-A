@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.com/FeiyiZHAO/PROJET-BACK-A.svg?branch=master)](https://travis-ci.com/FeiyiZHAO/PROJET-BACK-A)
 <a href="https://codeclimate.com/github/FeiyiZHAO/PROJET-BACK-A/maintainability"><img src="https://api.codeclimate.com/v1/badges/8d71f0828905042a0b2e/maintainability" /></a>
+[![Test Coverage](https://api.codeclimate.com/v1/badges/8d71f0828905042a0b2e/test_coverage)](https://codeclimate.com/github/FeiyiZHAO/PROJET-BACK-A/test_coverage)
+
 FeiyiZHAO
 
 
