@@ -10,8 +10,8 @@ test "should have the necessary required validators" do
   assert_not student.valid?
   assert_equal [:name, :last_name], student.errors.keys
 
-  student.name = "Feiyi"
-  student.last_name = "ZHAO"
+  student.name = "Name"
+  student.last_name = "Last_name"
   assert student.valid?
 end
 
